@@ -144,6 +144,28 @@ hr {
   margin-left: -20rem; }
 
 /**
+ *  ----- ----- ----- .modal ----- ----- -----
+ */
+#modalApplication .btn {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  color: #fff; }
+#modalApplication i {
+  font-size: 2.5rem; }
+#modalApplication .col-lg-2 {
+  padding: 2rem; }
+#modalApplication .box {
+  color: #fff;
+  text-decoration: none; }
+#modalApplication .box:hover {
+  color: var(--bs-teal); }
+
+.modal-backdrop {
+  background-color: #000;
+  opacity: 0.6 !important; }
+
+/**
  *  ----- ----- ----- .wrapper ----- ----- -----
  */
 .wrapper #mainSidebar {
