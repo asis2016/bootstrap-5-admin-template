@@ -2,7 +2,7 @@ $(document).ready(function () {
     /**
      * For sidebarToggled
      */
-
+    
     // Function to toggle sidebar
     function toggleSidebar() {
         $('body').toggleClass('sidebarToggled');

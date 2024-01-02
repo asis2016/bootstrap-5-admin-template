@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dark Django admin template">
+    <meta name="author" content="Ashish S. Maharjan">
+    <title>Dark Django admin template | Login</title>
+
+    <!-- CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            background-color: var(--amj-bg-primary-color);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--amj-border-primary-color);
+        }
+
+        .card {
+            max-width: 500px;
+            padding: 1rem;
+        }
+
+        .form-control{
+            color: #fff;
+            background-color: var(--amj-border-primary-color);
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="http://127.0.0.1:8000/accounts/registration/modals.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card rounded-4 shadow">
+        <div class="card-header">
+            <h3>Sign up for free</h3>
+        </div>
+        <div class="card-body">
+            <form class="">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3 bg-none" id="email"
+                        placeholder="name@example.com" value="hello@amaharjan.de">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="pass" placeholder="Password" value="pass">
+                    <label for="pass">Password</label>
+                </div>
+                <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" href="../../index.html">Sign up</a>
+                <small>By clicking Sign up, you agree to the terms of use.</small>
+
+                <hr class="my-4">
+                
+                <h4>Or use a third-party</h4>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#twitter" />
+                    </svg>
+                    Sign up with Twitter
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#facebook" />
+                    </svg>
+                    Sign up with Facebook
+                </button>
+                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16">
+                        <use xlink:href="#github" />
+                    </svg>
+                    Sign up with GitHub
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
