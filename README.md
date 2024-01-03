@@ -1,6 +1,6 @@
-# Bootstrap 5 admin template
+# adminAM - Bootstrap 5 admin template
 
-This project titled as "Bootstrap 5 admin template" is an open source admin template created by www.amaharjan.de.
+This project titled as `adminAM` is an open source admin template created by www.amaharjan.de.
 
 Initially started as a hobby project for a Django admin template. However, it has evolved to serve as an admin template for any customized web applications.
 
