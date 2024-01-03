@@ -6,19 +6,22 @@ $(document).ready(function () {
     // Function to toggle sidebar
     function toggleSidebar() {
         $('body').toggleClass('sidebarToggled');
-        localStorage.setItem('amjSidebarToggle', $('body').hasClass('sidebarToggled'));
+        
+        //Uncomment this for enabling localstorage
+        //localStorage.setItem('amjSidebarToggle', $('body').hasClass('sidebarToggled'));
     }
 
     // Sidebar toggle button
     let sidebarToggleBtn = $('#sidebarToggleBtn');
     if (sidebarToggleBtn.length) {
-        if (localStorage.getItem('amjSidebarToggle') === 'true') {
-            toggleSidebar();
-        }
+
+        //Uncomment this for enabling localstorage
+        // if (localStorage.getItem('amjSidebarToggle') === 'true') {
+        //     toggleSidebar();
+        // }
 
         sidebarToggleBtn.on('click', function (event) {
             event.preventDefault();
-            console.log('clicked');
             toggleSidebar();
         });
     }
@@ -28,7 +31,6 @@ $(document).ready(function () {
     if (sidebarUntoggleBtn.length) {
         sidebarUntoggleBtn.on('click', function (event) {
             event.preventDefault();
-            console.log('clicked');
             toggleSidebar();
             // $('.wrapper #mainSidebar').toggleClass('d-none');
         });

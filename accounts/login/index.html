@@ -1,12 +1,12 @@
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta name="description" content="Dark Django admin template">
+    <meta name="keywords" content="Django, Bootstrap v5.3.2, HTML, CSS, JavaScript">
     <meta name="author" content="Ashish S. Maharjan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dark Django admin template | Login</title>
 
     <!-- CSS -->
@@ -14,12 +14,6 @@
     <link href="../../static/css/style.css" rel="stylesheet">
 
     <style>
-        html,
-        body {
-            height: 100%;
-            background-color: var(--amj-bg-primary-color);
-        }
-
         .form-signin {
             max-width: 330px;
             padding: 1rem;
@@ -43,10 +37,10 @@
     </style>
 </head>
 
-<body class="d-flex align-items-center py-4 ">
-    <main class="form-signin w-100 m-auto">
+<body class="d-flex align-items-center py-4">
+    <main class="form-signin w-100 m-auto text-center">
         <form>
-            <img class="mb-4" src="https://placehold.co/72x57.png" alt="" width="72" height="57">
+            <img class="mb-4" src="../../static/img/logo-100x50.png" alt="Small logo">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">
@@ -55,7 +49,7 @@
                 <label for="email">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" placeholder="Password" value="**********"
+                <input type="password" class="form-control" placeholder="Password" value="********************"
                     autocomplete="off">
                 <label for="floatingPassword">Password</label>
             </div>
@@ -66,7 +60,7 @@
                     Remember me
                 </label>
             </div>
-            <a class="btn btn-primary w-100 py-2" href="../../index.html">Sign in</a>
+            <a class="btn btn-primary-amj w-100 py-2" href="../../index.html">Sign in</a>
             <p class="mt-5 mb-3 text-body-secondary">&copy; 2024</p>
         </form>
     </main>

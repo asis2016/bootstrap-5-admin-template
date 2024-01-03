@@ -9,16 +9,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 :root {
-  --amj-a-active: #20c997;
+  --amj-teal-primary: #20c997;
+  --amj-teal-secondary: #25C278;
   --amj-border-primary-color: #2c2e33;
+  --amj-border-secondary-color: #20c997;
   --amj-bg-primary-color: #1d1e24;
   --amj-text-primary-color: #fff;
   --amj-text-secondary-color: #a4a6ae; }
 
+html,
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: #fff; }
+  height: 100%; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
 
 /*
  * ----- ----- ----- heading ----- ----- -----
@@ -39,7 +43,7 @@ h4 {
  */
 .table {
   color: #fff;
-  background-color: #1d1e24; }
+  background-color: var(--amj-bg-primary-color); }
   .table thead tr {
     border-style: solid;
     border-width: 0; }
@@ -56,7 +60,7 @@ h4 {
     padding: 0.9375rem;
     line-height: 1;
     white-space: nowrap;
-    background-color: #1d1e24;
+    background-color: var(--amj-bg-primary-color);
     color: #fff; }
 
 /**
@@ -65,6 +69,38 @@ h4 {
 .btn-outline-secondary {
   color: #fff;
   border-color: #2c2e33; }
+
+.btn-primary-amj {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--amj-border-secondary-color);
+  --bs-btn-border-color: var(--amj-border-secondary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--amj-teal-secondary);
+  --bs-btn-hover-border-color: var(--amj-border-secondary-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--amj-border-secondary-color);
+  --bs-btn-active-border-color: var(--amj-border-secondary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--amj-border-secondary-color);
+  --bs-btn-disabled-border-color: var(--amj-border-secondary-color); }
+
+.btn-outline-amj {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: var(--amj-border-secondary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--amj-border-secondary-color);
+  --bs-btn-hover-border-color: var(--amj-border-secondary-color);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--amj-border-secondary-color);
+  --bs-btn-active-border-color: var(--amj-border-secondary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--amj-border-secondary-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-gradient: none; }
 
 /**
  * ----- ----- ----- .badge ----- ----- -----
@@ -86,7 +122,7 @@ h4 {
  */
 .card {
   color: #fff;
-  background-color: #1d1e24; }
+  background-color: var(--amj-bg-primary-color); }
   .card .card-header {
     border-bottom: 1px solid #2c2e33;
     text-transform: capitalize;
@@ -179,7 +215,7 @@ hr {
   color: #fff;
   text-decoration: none; }
 #modalApplication .box:hover {
-  color: var(--amj-a-active); }
+  color: var(--amj-teal-primary); }
 
 .modal-backdrop {
   background-color: #000;
@@ -227,9 +263,9 @@ hr {
     .breadcrumb-custom .breadcrumb-item a {
       color: #fff !important; }
     .breadcrumb-custom .breadcrumb-item a:hover {
-      color: var(--amj-a-active) !important; }
+      color: var(--amj-teal-primary) !important; }
   .breadcrumb-custom .active {
-    color: var(--amj-a-active); }
+    color: var(--amj-teal-primary); }
 
 /**
  *  ----- ----- ----- .breadcrumb-custom ----- ----- -----
@@ -245,11 +281,11 @@ hr {
   --bs-pagination-disabled-bg: #000;
   --bs-pagination-disabled-border-color: var(--amj-border-primary-color);
   --bs-pagination-hover-bg: var(--amj-bg-primary-color);
-  --bs-pagination-hover-color: var(--amj-a-active); }
+  --bs-pagination-hover-color: var(--amj-teal-primary); }
 
 .wrapper #mainSidebar {
   min-width: 20rem;
-  background-color: #1d1e24;
+  background-color: var(--amj-bg-primary-color);
   transition: margin 0.25s ease-out; }
   .wrapper #mainSidebar .nav-pills .active {
     color: var(--bs-teal);
@@ -260,9 +296,10 @@ hr {
       color: var(--bs-teal); }
 .wrapper #pageContent {
   min-width: 0;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
   .wrapper #pageContent #topNavigation {
-    background-color: #1d1e24; }
+    background-color: var(--amj-bg-primary-color); }
     .wrapper #pageContent #topNavigation .container-fluid div:first-child {
       justify-content: center; }
     .wrapper #pageContent #topNavigation .container-fluid form .btn {
@@ -288,7 +325,7 @@ hr {
   text-decoration: none;
   color: #fff !important; }
   .amj-a:hover {
-    color: var(--amj-a-active) !important; }
+    color: var(--amj-teal-primary) !important; }
 
 .cardQuickInfo .card-body {
   display: flex;
@@ -322,7 +359,7 @@ footer {
  */
 @media screen and (max-width: 767px) {
   .sidebarToggled #mainSidebar {
-    margin-left: -20rem; }
+    margin-left: 0 !important; }
 
   /**
    *  ----- ----- ----- .wrapper ----- ----- -----
@@ -334,7 +371,10 @@ footer {
     z-index: 999;
     position: fixed;
     top: 0;
-    border-right: 1px solid #2c2e33; }
+    border-right: 1px solid #2c2e33;
+    overflow-y: scroll;
+    min-width: 250px;
+    margin-left: -20rem; }
     .wrapper #mainSidebar div:first-child a {
       justify-content: space-between;
       margin-bottom: 0 !important; }
