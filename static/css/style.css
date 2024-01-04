@@ -436,27 +436,43 @@ footer {
 /**
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
  */
-@media screen and (min-width: 768px) {
-  .lg-d-none {
-    display: none; } }
 @media screen and (max-width: 991px) {
+  .only-d-lg {
+    display: none; }
+
   #lineChartExampleOne {
     height: 200px !important; }
 
-  .sm-d-none {
-    display: none; }
+  #world-map {
+    height: 200px !important; }
+
+  .sm-mb-0 {
+    margin-bottom: 0 !important; }
 
   .sm-mb-1 {
-    margin-bottom: 1rem; }
+    margin-bottom: .25rem !important; }
+
+  .sm-mb-2 {
+    margin-bottom: .5rem !important; }
+
+  .sm-mb-3 {
+    margin-bottom: 1rem !important; }
 
   .sm-mt-0 {
     margin-top: 0 !important; }
 
   .sm-mt-1 {
-    margin-top: 1rem; }
+    margin-top: .25rem !important; }
 
   .sm-mt-2 {
-    margin-top: 2rem; }
+    margin-top: .5rem !important; }
+
+  .sm-mt-3 {
+    margin-top: 1rem !important; }
+
+  .sm-my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important; }
 
   .sm-my-4 {
     margin-top: 1.5rem !important;
@@ -470,6 +486,9 @@ footer {
   #modalApplication .modal-body-sm i {
     margin-right: 5px; } }
 @media screen and (min-width: 992px) {
+  .only-d-sm {
+    display: none; }
+
   #modalApplication .modal-body-sm {
     display: none; }
   #modalApplication .modal-body-lg i {

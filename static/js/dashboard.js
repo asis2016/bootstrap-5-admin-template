@@ -66,22 +66,22 @@ $(document).ready(function () {
             datasets: [
                 {
                     label: 'Purchase',
-                    data: [1000, 1200, 800, 1300, 1100, 900, 1300, 950, 1200, 1000, 1100, 900],
+                    data: [10000, 5000, 15000, 10000, 20000, 15000, 30000, 25000, 40000, 35000, 50000, 45000],
                     borderWidth: 1,
                     borderColor: "#9461fb",
                     backgroundColor: "#9461fb",
-                    pointRadius: 5,
+                    pointRadius: 3,
                     tension: 0.3,
                     yAxisID: 'y',
 
                 },
                 {
                     label: 'Sales',
-                    data: [1200, 950, 1100, 800, 1300, 1050, 900, 1150, 1000, 1250, 1100, 950],
+                    data: [15000, 10000, 20000, 15000, 25000, 20000, 35000, 30000, 45000, 40000, 55000, 50000],
                     borderWidth: 1,
                     borderColor: "#ffe484",
                     backgroundColor: "#ffe484",
-                    pointRadius: 5,
+                    pointRadius: 3,
                     tension: 0.3,
                     yAxisID: 'y1',
                 }
@@ -105,7 +105,9 @@ $(document).ready(function () {
                     position: 'left',
                     grid: {
                         color: '#2c2e33' // Set the color of the y-axis grid lines
-                    }
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 65000, 
 
                 },
                 y1: {
@@ -114,8 +116,9 @@ $(document).ready(function () {
                     position: 'right',
                     grid: {
                         color: '#2c2e33'
-                    }
-
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 65000, 
                 },
                 x: {
                     grid: {

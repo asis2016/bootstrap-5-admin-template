@@ -15,11 +15,20 @@
     <link href="../static/css/style.css" rel="stylesheet" />
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jvectormap -->
+    <link
+      rel="stylesheet"
+      href="../static/css/jquery-jvectormap-2.0.5.css"
+      type="text/css"
+      media="screen"
+    />
   </head>
 
   <body>
     <div class="wrapper d-flex h-100">
       <!-- #mainSidebar -->
+
       <nav id="mainSidebar" class="h-100">
         <div class="d-flex flex-column flex-shrink-0 p-3">
           <a
@@ -27,9 +36,14 @@
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
           >
             <!-- logo for LG screen -->
-            <span class="fs-4 logo-lg sm-d-none">Amaharjan</span>
+            <span class="fs-4 logo-lg only-d-lg">
+              <img src="../static/img/logo-100x25.png" alt="" />
+            </span>
+
             <!-- logo for SM screen -->
-            <span class="fs-4 logo-sm lg-d-none">AMJ</span>
+            <span class="fs-4 logo-sm only-d-sm">
+              <img src="../static/img/logo-40x25.png" alt="" />
+            </span>
             <!-- for SM screen - close -->
             <span class="d-sm-none" id="sidebarUntoggleBtn">
               <i class="bi bi-x-circle-fill"></i>
@@ -47,7 +61,8 @@
                 Home v.1
               </a>
             </li>
-            <li>
+            <!-- todo -->
+            <li class="d-none">
               <a href="index.html#" class="nav-link">
                 <i class="bi bi-marker-tip me-2"></i>
                 Widgets
@@ -175,7 +190,7 @@
                 <!-- nav -->
                 <ul class="nav">
                   <!-- Home icon for sm screen -->
-                  <li class="lg-d-none">
+                  <li class="only-d-sm">
                     <a href="../index.html" class="nav-link text-white">
                       <i class="bi bi-house-door-fill"></i>
                     </a>
@@ -306,7 +321,7 @@
 
         <div class="container-fluid px-4">
           <!-- section searchForMobile -->
-          <div class="row my-4 sm-my-4 sm-mt-0" id="searchForMobile">
+          <div class="row my-4 sm-my-3 sm-mt-0" id="searchForMobile">
             <div class="col">
               <form>
                 <div class="input-group">
@@ -349,7 +364,7 @@
           </div>
           <!-- page title ends -->
 
-          <div class="row mt-4">
+          <div class="row mt-4 sm-mt-3">
             <div class="col-lg-3">
               <!-- side -->
               <div>
@@ -395,7 +410,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-9 col-sm-12 sm-my-4">
+            <div class="col-lg-9 col-sm-12 sm-mt-3">
               <div class="card">
                 <div class="card-body">
                   <!-- mail options -->
@@ -451,8 +466,8 @@
                           <td>
                             <a href="index.html#"> Meeting Tomorrow </a>
                           </td>
-                          <td></td>
-                          <td>2 hours ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">2 hours ago</td>
                         </tr>
 
                         <tr>
@@ -468,10 +483,10 @@
                           <td>
                             <a href="index.html#"> Project Update </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>1 day ago</td>
+                          <td class="only-d-lg">1 day ago</td>
                         </tr>
 
                         <tr>
@@ -489,8 +504,8 @@
                           <td>
                             <a href="index.html#"> Vacation Plans </a>
                           </td>
-                          <td></td>
-                          <td>3 days ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">3 days ago</td>
                         </tr>
 
                         <tr>
@@ -506,10 +521,10 @@
                           <td>
                             <a href="index.html#"> Important Announcement </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>5 hours ago</td>
+                          <td class="only-d-lg">5 hours ago</td>
                         </tr>
 
                         <tr>
@@ -527,10 +542,10 @@
                           <td>
                             <a href="index.html#"> Weekly Report </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>4 days ago</td>
+                          <td class="only-d-lg">4 days ago</td>
                         </tr>
 
                         <tr>
@@ -546,8 +561,8 @@
                           <td>
                             <a href="index.html#"> Training Session </a>
                           </td>
-                          <td></td>
-                          <td>6 hours ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">6 hours ago</td>
                         </tr>
 
                         <tr>
@@ -565,10 +580,10 @@
                           <td>
                             <a href="index.html#"> Team Meeting </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>2 days ago</td>
+                          <td class="only-d-lg">2 days ago</td>
                         </tr>
 
                         <tr>
@@ -584,8 +599,8 @@
                           <td>
                             <a href="index.html#"> Product Launch </a>
                           </td>
-                          <td></td>
-                          <td>1 week ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">1 week ago</td>
                         </tr>
 
                         <tr>
@@ -603,10 +618,10 @@
                           <td>
                             <a href="index.html#"> New Opportunity </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>4 days ago</td>
+                          <td class="only-d-lg">4 days ago</td>
                         </tr>
 
                         <tr>
@@ -622,8 +637,8 @@
                           <td>
                             <a href="index.html#"> Customer Feedback </a>
                           </td>
-                          <td></td>
-                          <td>3 weeks ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">3 weeks ago</td>
                         </tr>
 
                         <tr>
@@ -641,10 +656,10 @@
                           <td>
                             <a href="index.html#"> Project Kickoff </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>1 week ago</td>
+                          <td class="only-d-lg">1 week ago</td>
                         </tr>
 
                         <tr>
@@ -660,8 +675,8 @@
                           <td>
                             <a href="index.html#"> Client Meeting </a>
                           </td>
-                          <td></td>
-                          <td>2 days ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">2 days ago</td>
                         </tr>
 
                         <tr>
@@ -679,10 +694,10 @@
                           <td>
                             <a href="index.html#"> Budget Approval </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>4 hours ago</td>
+                          <td class="only-d-lg">4 hours ago</td>
                         </tr>
 
                         <tr>
@@ -698,8 +713,8 @@
                           <td>
                             <a href="index.html#"> Quarterly Review </a>
                           </td>
-                          <td></td>
-                          <td>3 weeks ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">3 weeks ago</td>
                         </tr>
 
                         <tr>
@@ -717,8 +732,8 @@
                           <td>
                             <a href="index.html#"> Team Building Event </a>
                           </td>
-                          <td></td>
-                          <td>5 days ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">5 days ago</td>
                         </tr>
 
                         <tr>
@@ -734,10 +749,10 @@
                           <td>
                             <a href="index.html#"> Product Demo </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>6 days ago</td>
+                          <td class="only-d-lg">6 days ago</td>
                         </tr>
 
                         <tr>
@@ -755,8 +770,8 @@
                           <td>
                             <a href="index.html#"> Performance Review </a>
                           </td>
-                          <td></td>
-                          <td>2 weeks ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">2 weeks ago</td>
                         </tr>
 
                         <tr>
@@ -772,10 +787,10 @@
                           <td>
                             <a href="index.html#"> Training Workshop </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>1 day ago</td>
+                          <td class="only-d-lg">1 day ago</td>
                         </tr>
 
                         <tr>
@@ -793,10 +808,10 @@
                           <td>
                             <a href="index.html#"> New Project Proposal </a>
                           </td>
-                          <td>
+                          <td class="only-d-lg">
                             <i class="bi bi-paperclip"></i>
                           </td>
-                          <td>3 days ago</td>
+                          <td class="only-d-lg">3 days ago</td>
                         </tr>
 
                         <tr>
@@ -812,8 +827,8 @@
                           <td>
                             <a href="index.html#"> Company Announcement </a>
                           </td>
-                          <td></td>
-                          <td>4 weeks ago</td>
+                          <td class="only-d-lg"></td>
+                          <td class="only-d-lg">4 weeks ago</td>
                         </tr>
                       </thead>
                     </table>
@@ -857,7 +872,8 @@
 
         <!-- footer -->
         <!-- divider for footer -->
-        <div class="mt-4"></div>
+        <div class="mt-4 sm-mt-3"></div>
+        <!-- divider for footer ends -->
         <footer class="py-3 mt-auto container-fluid">
           <div class="row">
             <div class="col text-small">
@@ -866,15 +882,17 @@
             <div class="col text-small text-end">
               <span class="mb-3 mb-md-0">
                 Designed by
-                <a href="https://github.com/asis2016/bootstrap-5-admin-template"
-                  >adminAM - Bootstrap 5 Admin Template</a
+                <a
+                  href="https://github.com/asis2016/bootstrap-5-admin-template"
                 >
+                  <span class="only-d-lg"
+                    >adminAM - Bootstrap 5 Admin Template</span
+                  >
+                  <span class="only-d-sm">adminAM</span>
+                </a>
               </span>
             </div>
           </div>
-          <!-- <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
-                    
-                </div> -->
         </footer>
         <!-- footer ends -->
       </div>
@@ -888,7 +906,7 @@
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-            <h5 class="modal-title">All Applications</h5>
+            <h6 class="modal-title">All Applications</h6>
             <button
               type="button"
               class="btn-close"
@@ -1248,9 +1266,11 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <!-- chartjs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- jvectormap -->
+    <script src="../static/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="../static/js/jquery-jvectormap-world-mill-en.js"></script>
     <!-- script.js -->
     <script src="../static/js/script.js"></script>
   </body>
