@@ -280,6 +280,9 @@ hr {
   --bs-pagination-hover-color: var(--amj-teal-primary); }
 
 /**
+ *  ----- ----- ----- .accordion ----- ----- -----
+ */
+/**
  *  ----- ----- ----- ul.timeline ----- ----- -----
  */
 ul.timeline {
@@ -437,6 +440,9 @@ footer {
   .lg-d-none {
     display: none; } }
 @media screen and (max-width: 991px) {
+  #lineChartExampleOne {
+    height: 200px !important; }
+
   .sm-d-none {
     display: none; }
 

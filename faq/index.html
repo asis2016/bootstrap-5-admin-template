@@ -162,11 +162,11 @@
                   <input
                     type="text"
                     class="form-control form-control-dark text-bg-dark text-white"
-                    value="search..."
+                    placeholder="search here"
                   />
-                  <button class="btn" type="button">
+                  <a class="btn" href="../search-results/index.html">
                     <i class="bi bi-search"></i>
-                  </button>
+                  </a>
                 </div>
               </form>
 
@@ -313,11 +313,11 @@
                   <input
                     type="text"
                     class="form-control form-control-dark text-bg-dark text-white"
-                    value="search..."
+                    value="search here"
                   />
-                  <button class="btn" type="button">
+                  <a class="btn" href="../search-results/index.html">
                     <i class="bi bi-search"></i>
-                  </button>
+                  </a>
                 </div>
               </form>
             </div>
@@ -329,7 +329,7 @@
           <!-- page title -->
           <div class="pageTitle pt-4 sm-pt-0">
             <h3>FAQs</h3>
-            <div class="btn-toolbar mb-2 mb-md-0 d-none">
+            <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   Generate report
@@ -349,300 +349,314 @@
           </div>
           <!-- page title ends -->
 
-          <!-- faq starts -->
-          <div class="accordion" id="accordionFaq">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1"
-                  aria-expanded="true"
-                  aria-controls="collapse1"
-                >
-                  How do I create an administrator account?
-                </button>
-              </h2>
-              <div
-                id="collapse1"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    To create an administrator account, log in to the system
-                    with your user credentials and navigate to the user
-                    management section. There, you can assign administrator
-                    privileges to the desired user.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <style>
+            /* todo refactor */
+            .accordion-button:not(.collapsed) {
+              /* <    background-color: #20c997;
+    color: #000;> */
+            }
+          </style>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse2"
-                  aria-expanded="true"
-                  aria-controls="collapse2"
-                >
-                  What permissions do administrators have?
-                </button>
-              </h2>
-              <div
-                id="collapse2"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    Administrators typically have full access to system
-                    settings, user management, and other administrative
-                    features. This includes the ability to modify system
-                    configurations and manage user roles.
-                  </p>
+          <div class="row">
+            <div class="col-lg-8">
+              <!-- faq starts -->
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse1"
+                    >
+                      How do I create an administrator account?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        To create an administrator account, log in to the system
+                        with your user credentials and navigate to the user
+                        management section. There, you can assign administrator
+                        privileges to the desired user.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse3"
-                  aria-expanded="true"
-                  aria-controls="collapse3"
-                >
-                  How can I reset the password for an administrator account?
-                </button>
-              </h2>
-              <div
-                id="collapse3"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    Only administrators with the appropriate permissions can
-                    reset passwords. Navigate to the user management section,
-                    locate the administrator account, and follow the
-                    instructions to reset the password.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse2"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse2"
+                    >
+                      What permissions do administrators have?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Administrators typically have full access to system
+                        settings, user management, and other administrative
+                        features. This includes the ability to modify system
+                        configurations and manage user roles.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse4"
-                  aria-expanded="true"
-                  aria-controls="collapse4"
-                >
-                  Can I customize the dashboard for administrators?
-                </button>
-              </h2>
-              <div
-                id="collapse4"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    Yes, administrators often have the ability to customize
-                    their dashboard by rearranging widgets, adding shortcuts,
-                    and choosing relevant data displays. Check the settings or
-                    dashboard customization options in the administrator panel.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse3"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse3"
+                    >
+                      How can I reset the password for an administrator account?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Only administrators with the appropriate permissions can
+                        reset passwords. Navigate to the user management
+                        section, locate the administrator account, and follow
+                        the instructions to reset the password.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse5"
-                  aria-expanded="true"
-                  aria-controls="collapse5"
-                >
-                  What should I do if I forget the administrator password?
-                </button>
-              </h2>
-              <div
-                id="collapse5"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    If you forget the administrator password, use the
-                    &#x27;Forgot Password&#x27; link on the login page. Follow
-                    the instructions sent to your registered email address to
-                    reset the administrator password.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse4"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse4"
+                    >
+                      Can I customize the dashboard for administrators?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes, administrators often have the ability to customize
+                        their dashboard by rearranging widgets, adding
+                        shortcuts, and choosing relevant data displays. Check
+                        the settings or dashboard customization options in the
+                        administrator panel.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse6"
-                  aria-expanded="true"
-                  aria-controls="collapse6"
-                >
-                  How can I add or remove administrator roles?
-                </button>
-              </h2>
-              <div
-                id="collapse6"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    Only super administrators may have the authority to add or
-                    remove administrator roles. Check the user management
-                    section and look for options related to role assignments.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse5"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse5"
+                    >
+                      What should I do if I forget the administrator password?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        If you forget the administrator password, use the
+                        &#x27;Forgot Password&#x27; link on the login page.
+                        Follow the instructions sent to your registered email
+                        address to reset the administrator password.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse7"
-                  aria-expanded="true"
-                  aria-controls="collapse7"
-                >
-                  Is there a log of administrator activities?
-                </button>
-              </h2>
-              <div
-                id="collapse7"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    Yes, many systems log administrator activities for security
-                    and auditing purposes. Check the system logs or
-                    administrator activity history to review actions taken by
-                    administrators.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse6"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse6"
+                    >
+                      How can I add or remove administrator roles?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse6"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Only super administrators may have the authority to add
+                        or remove administrator roles. Check the user management
+                        section and look for options related to role
+                        assignments.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse8"
-                  aria-expanded="true"
-                  aria-controls="collapse8"
-                >
-                  What is the process for transferring administrator privileges
-                  to another user?
-                </button>
-              </h2>
-              <div
-                id="collapse8"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    To transfer administrator privileges, a super administrator
-                    must access the user management section and modify the user
-                    roles accordingly. Ensure that the new administrator is
-                    adequately trained and informed.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse7"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse7"
+                    >
+                      Is there a log of administrator activities?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse7"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Yes, many systems log administrator activities for
+                        security and auditing purposes. Check the system logs or
+                        administrator activity history to review actions taken
+                        by administrators.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse9"
-                  aria-expanded="true"
-                  aria-controls="collapse9"
-                >
-                  How often should administrators update their passwords?
-                </button>
-              </h2>
-              <div
-                id="collapse9"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    It&#x27;s recommended for administrators to update their
-                    passwords regularly, at least every [X] months. This
-                    practice enhances security and helps prevent unauthorized
-                    access.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse8"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse8"
+                    >
+                      What is the process for transferring administrator
+                      privileges to another user?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse8"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        To transfer administrator privileges, a super
+                        administrator must access the user management section
+                        and modify the user roles accordingly. Ensure that the
+                        new administrator is adequately trained and informed.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse10"
-                  aria-expanded="true"
-                  aria-controls="collapse10"
-                >
-                  What security measures are in place to protect administrator
-                  accounts?
-                </button>
-              </h2>
-              <div
-                id="collapse10"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFaq"
-              >
-                <div class="accordion-body">
-                  <p>
-                    We implement various security measures, including
-                    multi-factor authentication, IP restrictions, and regular
-                    security audits, to protect administrator accounts and
-                    ensure the integrity of the system.
-                  </p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse9"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse9"
+                    >
+                      How often should administrators update their passwords?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse9"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        It&#x27;s recommended for administrators to update their
+                        passwords regularly, at least every [X] months. This
+                        practice enhances security and helps prevent
+                        unauthorized access.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapse10"
+                      aria-expanded="false"
+                      aria-controls="flush-collapse10"
+                    >
+                      What security measures are in place to protect
+                      administrator accounts?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapse10"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        We implement various security measures, including
+                        multi-factor authentication, IP restrictions, and
+                        regular security audits, to protect administrator
+                        accounts and ensure the integrity of the system.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- faq ends -->
             </div>
           </div>
-          <!-- faq ends -->
 
           <!-- main_content ends -->
         </div>
@@ -651,11 +665,22 @@
         <!-- divider for footer -->
         <div class="mt-4"></div>
         <footer class="py-3 mt-auto container-fluid">
-          <div
-            class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end"
-          >
-            <span class="mb-3 mb-md-0">© 2023 Ashish S. Maharjan</span>
+          <div class="row">
+            <div class="col text-small">
+              <span class="mb-3 mb-md-0">© Your Company | 2024</span>
+            </div>
+            <div class="col text-small text-end">
+              <span class="mb-3 mb-md-0">
+                Designed by
+                <a href="https://github.com/asis2016/bootstrap-5-admin-template"
+                  >adminAM - Bootstrap 5 Admin Template</a
+                >
+              </span>
+            </div>
           </div>
+          <!-- <div class="offset-md-8 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center justify-content-end">
+                    
+                </div> -->
         </footer>
         <!-- footer ends -->
       </div>
