@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "js-beautify": "^1.14.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
+}

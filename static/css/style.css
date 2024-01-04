@@ -48,11 +48,11 @@ h4 {
     border-style: solid;
     border-width: 0; }
     .table thead tr th {
-      border-bottom-color: #2c2e33 !important; }
+      border-bottom-color: var(--amj-border-primary-color) !important; }
   .table tbody tr {
     border-style: solid;
     border-width: 0;
-    border-color: #2c2e33; }
+    border-color: var(--amj-border-primary-color); }
   .table th,
   .table td {
     vertical-align: middle;
@@ -68,7 +68,7 @@ h4 {
  */
 .btn-outline-secondary {
   color: #fff;
-  border-color: #2c2e33; }
+  border-color: var(--amj-border-primary-color); }
 
 .btn-primary-amj {
   --bs-btn-color: #fff;
@@ -124,7 +124,7 @@ h4 {
   color: #fff;
   background-color: var(--amj-bg-primary-color); }
   .card .card-header {
-    border-bottom: 1px solid #2c2e33;
+    border-bottom: 1px solid var(--amj-border-primary-color);
     text-transform: capitalize;
     font-size: 1.125rem;
     font-family: 'Ubuntu', sans-serif;
@@ -134,13 +134,13 @@ h4 {
     margin-bottom: 1.125rem;
     text-transform: capitalize; }
   .card .card-footer {
-    border-top: 1px solid #2c2e33; }
+    border-top: 1px solid var(--amj-border-primary-color); }
 
 /**
  * ----- ----- ----- hr ----- ----- -----
  */
 hr {
-  border-top: #2c2e33 solid !important; }
+  border-top: var(--amj-border-primary-color) solid !important; }
 
 /**
  * ----- ----- ----- .media ----- ----- -----
@@ -207,10 +207,6 @@ hr {
   right: -30px;
   top: -30px;
   color: #fff; }
-#modalApplication i {
-  font-size: 2.5rem; }
-#modalApplication .col-lg-2 {
-  padding: 2rem; }
 #modalApplication .box {
   color: #fff;
   text-decoration: none; }
@@ -225,7 +221,7 @@ hr {
  *  ----- ----- ----- .border ----- ----- -----
  */
 .border-primary-color {
-  color: #2c2e33; }
+  color: var(--amj-border-primary-color); }
 
 /**
  *  ----- ----- ----- .breadcrumb-custom ----- ----- -----
@@ -283,6 +279,40 @@ hr {
   --bs-pagination-hover-bg: var(--amj-bg-primary-color);
   --bs-pagination-hover-color: var(--amj-teal-primary); }
 
+/**
+ *  ----- ----- ----- ul.timeline ----- ----- -----
+ */
+ul.timeline {
+  list-style-type: none;
+  position: relative; }
+  ul.timeline:before {
+    content: ' ';
+    background: var(--bs-teal);
+    display: inline-block;
+    position: absolute;
+    left: 9px;
+    width: 2px;
+    height: 100%;
+    z-index: 400; }
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 0; }
+  ul.timeline > li:before {
+    content: ' ';
+    background: var(--bs-teal);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--bs-teal);
+    left: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 400; }
+
+/**
+ *  ----- ----- ----- .wrapper ----- ----- -----
+ */
 .wrapper #mainSidebar {
   min-width: 20rem;
   background-color: var(--amj-bg-primary-color);
@@ -300,6 +330,8 @@ hr {
   overflow-y: scroll; }
   .wrapper #pageContent #topNavigation {
     background-color: var(--amj-bg-primary-color); }
+    .wrapper #pageContent #topNavigation .nav-link i {
+      position: relative; }
     .wrapper #pageContent #topNavigation .container-fluid div:first-child {
       justify-content: center; }
     .wrapper #pageContent #topNavigation .container-fluid form .btn {
@@ -311,7 +343,7 @@ hr {
       border: 1px solid #fff;
       color: #fff; }
   .wrapper #pageContent .container-fluid .pageTitle {
-    border-bottom: 1px solid #2c2e33;
+    border-bottom: 1px solid var(--amj-border-primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -321,6 +353,9 @@ hr {
 /*
  * ----- ----- ----- ----- ----- ----- Components ----- ----- ----- ----- ----- -----
  */
+.divider {
+  border-bottom: 1px solid var(--amj-border-primary-color); }
+
 .amj-a {
   text-decoration: none;
   color: #fff !important; }
@@ -346,7 +381,7 @@ hr {
  */
 footer {
   color: #fff;
-  border-top: 1px solid #2c2e33; }
+  border-top: 1px solid var(--amj-border-primary-color); }
 
 /**
  * ----- ----- ----- others ----- ----- -----
@@ -371,7 +406,7 @@ footer {
     z-index: 999;
     position: fixed;
     top: 0;
-    border-right: 1px solid #2c2e33;
+    border-right: 1px solid var(--amj-border-primary-color);
     overflow-y: scroll;
     min-width: 250px;
     margin-left: -20rem; }
@@ -393,6 +428,15 @@ footer {
     .wrapper #pageContent .container-fluid .pageTitle .btn-toolbar {
       justify-content: space-between; }
 
+  #sectionDashboardQuickInfo .col-xs-12:last-child {
+    margin-bottom: 0; } }
+/**
+ * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ */
+@media screen and (min-width: 768px) {
+  .lg-d-none {
+    display: none; } }
+@media screen and (max-width: 991px) {
   .sm-d-none {
     display: none; }
 
@@ -415,13 +459,16 @@ footer {
   .sm-pt-0 {
     padding-top: 0 !important; }
 
-  #sectionDashboardQuickInfo .col-xs-12:last-child {
-    margin-bottom: 0; } }
-/**
- * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
- */
-@media screen and (min-width: 768px) {
-  .lg-d-none {
-    display: none; } }
+  #modalApplication .modal-body-lg {
+    display: none; }
+  #modalApplication .modal-body-sm i {
+    margin-right: 5px; } }
+@media screen and (min-width: 992px) {
+  #modalApplication .modal-body-sm {
+    display: none; }
+  #modalApplication .modal-body-lg i {
+    font-size: 2.5rem; }
+  #modalApplication .col-lg-2 {
+    padding: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
