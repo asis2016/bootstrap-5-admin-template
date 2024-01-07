@@ -121,7 +121,6 @@ h4 {
  * ----- ----- ----- .card ----- ----- -----
  */
 .card {
-  color: #fff;
   background-color: var(--amj-bg-primary-color); }
   .card .card-header {
     border-bottom: 1px solid var(--amj-border-primary-color);
@@ -192,6 +191,20 @@ hr {
   height: 40px;
   width: 40px;
   align-items: center; }
+
+/**
+ *  ----- ----- ----- .productImg ----- ----- -----
+ */
+.profileNameInitials h6 {
+  border: 1px solid var(--bs-primary);
+  background-color: var(--bs-teal);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 1rem; }
 
 /**
  *  ----- ----- ----- .sidebarToggled ----- ----- -----
@@ -385,6 +398,9 @@ ul.timeline > li {
 footer {
   color: #fff;
   border-top: 1px solid var(--amj-border-primary-color); }
+
+.list-group {
+  --bs-list-group-bg: var(var(--amj-bg-primary-color)); }
 
 /**
  * ----- ----- ----- others ----- ----- -----

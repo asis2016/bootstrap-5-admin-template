@@ -6,7 +6,7 @@
     <meta name="keywords" content="Bootstrap v5.3.2, HTML, CSS, JavaScript" />
     <meta name="author" content="Ashish S. Maharjan" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>adminAM - Bootstrap 5 admin template | My Profile</title>
+    <title>adminAM - Bootstrap 5 admin template | Expense Report</title>
 
     <!-- <meta http-equiv="refresh" content="5"/> -->
 
@@ -92,7 +92,7 @@
               </a>
             </li>
             <li>
-              <a href="../expenses/index.html" class="nav-link">
+              <a href="index.html" class="nav-link">
                 <i class="bi bi-receipt me-2"></i>
                 Expense
               </a>
@@ -107,7 +107,7 @@
               </a>
             </li>
             <li>
-              <a href="index.html" class="nav-link">
+              <a href="../profile/index.html" class="nav-link">
                 <i class="bi bi-person-circle me-2"></i>
                 My Profile
               </a>
@@ -263,7 +263,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="index.html">
+                        <a class="dropdown-item" href="../profile/index.html">
                           <small>
                             <i class="bi bi-person-fill me-2"></i>My Profile
                           </small>
@@ -280,7 +280,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="index.html">
+                        <a class="dropdown-item" href="../profile/index.html">
                           <small>
                             <i class="bi bi-gear-fill me-2"></i>Settings
                           </small>
@@ -342,7 +342,7 @@
 
           <!-- page title -->
           <div class="pageTitle pt-4 sm-pt-0">
-            <h3>My Profile</h3>
+            <h3>Expense Report</h3>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -363,380 +363,216 @@
           </div>
           <!-- page title ends -->
 
-          <div class="row mt-4 sm-mt-3" id="profilePage">
-            <!-- profile quick info -->
-            <div class="col-lg-3">
-              <div class="card">
-                <div class="card-body">
-                  <div
-                    class="profileNameInitials d-flex justify-content-center align-item-center"
-                  >
-                    <h6 class="fs-2">JD</h6>
+          <!-- 1st row -->
+          <div class="row mt-4 sm-mt-0">
+            <div class="col-lg-5">
+              <!-- boxes -->
+              <div class="row sm-mt-0">
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Budget Forecast</h6>
+                      <h2>$10.3M</h2>
+                    </div>
                   </div>
-                  <ul class="list-group list-group-flush rounded">
-                    <li class="list-group-item" id="user">John Doe</li>
-                    <li class="list-group-item" id="home">
-                      <i class="bi bi-folder me-2"></i>
-                      <span>Senior Software Engineer</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-terminal me-2"></i>
-                      <span>Technology</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-currency-euro me-2"></i> Base salary:
-                      <span>90000.0</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-calendar-check me-2"></i> Joined:
-                      <span>2023-03-15</span>
-                    </li>
-                  </ul>
+                </div>
+
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Amount Spent</h6>
+                      <h2>$5.15M</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Exceed by</h6>
+                      <h2>50%</h2>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- profile quick info ends -->
+              <!-- boxes ends -->
 
-            <!-- profile tabs -->
-            <div class="col-lg-9 sm-my-3">
-              <div class="card">
-                <div class="card-body">
-                  <!-- tabs -->
-                  <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button
-                        class="nav-link active"
-                        id="nav-details-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-details"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-details"
-                        aria-selected="true"
-                      >
-                        Details
-                      </button>
-                      <button
-                        class="nav-link"
-                        id="nav-timeline-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-timeline"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-timeline"
-                        aria-selected="false"
-                      >
-                        Timeline
-                      </button>
+              <!-- Jan expenses -->
+              <div class="row mt-4 sm-mt-0">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h6 class="my-2">January Expenses</h6>
                     </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-                    <!-- nav-profile -->
-                    <div
-                      class="tab-pane fade show active"
-                      id="nav-details"
-                      role="tabpanel"
-                      aria-labelledby="nav-profile-tab"
-                      tabindex="0"
-                    >
-                      <!-- form -->
-                      <form class="py-4 px-4">
-                        <!-- id -->
-                        <div class="row mb-3">
-                          <label for="inputId" class="col-sm-2 col-form-label">
-                            Id
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputId"
-                              value="1234"
-                            />
-                          </div>
-                        </div>
-                        <!-- firstName -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputUname"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Firstname
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputUname"
-                              value="John"
-                            />
-                          </div>
-                        </div>
-                        <!-- lastName -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputlastName"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Lastname
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputlastName"
-                              value="Doe"
-                            />
-                          </div>
-                        </div>
-                        <!-- email -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputEmail"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Email address
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputEmail"
-                              value="john.doe@example.com"
-                              aria-describedby="inputEtcPasswdHelp"
-                            />
-                            <div id="inputEtcPasswdHelp" class="form-text">
-                              Your email is organized by YourCompany Ltd.
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Phone number -->
-                        <div class="row mb-3">
-                          <label
-                            for="phoneNumber"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Phone number
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="phoneNumber"
-                              value="+1 (555) 123-4567"
-                            />
-                          </div>
-                        </div>
-                        <!-- address -->
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label">
-                            Address
-                          </label>
-                          <div class="col-md-4">
-                            <label for="inputSettingB" class="form-label"
-                              >City</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputSettingB"
-                              value="123 Main St, Kathmandu"
-                            />
-                          </div>
-                          <div class="col-md-4">
-                            <label for="inputSettingC" class="form-label"
-                              >State</label
-                            >
-                            <select id="inputSettingC" class="form-select">
-                              <option selected>Bagmati</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-                          <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputZip"
-                              value="00977"
-                            />
-                          </div>
-                        </div>
-                        <!-- address ends -->
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table overflow-scroll table-hover">
+                          <thead>
+                            <tr>
+                              <th>Category</th>
+                              <th>Budget</th>
+                              <th>Expense</th>
+                              <th>-/*</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Office Supplies</td>
+                              <td>50K</td>
+                              <td>42K</td>
+                              <td>16%</td>
+                            </tr>
 
-                        <!-- Benefits -->
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label">
-                            Benefits
-                          </label>
+                            <tr>
+                              <td>Marketing</td>
+                              <td>120K</td>
+                              <td>105K</td>
+                              <td>12.5%</td>
+                            </tr>
 
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Premium
-                              </label>
-                            </div>
-                          </div>
+                            <tr>
+                              <td>Travel</td>
+                              <td>80K</td>
+                              <td>75K</td>
+                              <td>6.25%</td>
+                            </tr>
 
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Dentals
-                              </label>
-                            </div>
-                          </div>
+                            <tr>
+                              <td>IT Services</td>
+                              <td>150K</td>
+                              <td>130K</td>
+                              <td>13.33%</td>
+                            </tr>
 
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                401K
-                              </label>
-                            </div>
-                          </div>
-
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Himal bonus
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Benefits ends -->
-                      </form>
-                      <!-- form ends -->
-                    </div>
-                    <!-- nav-profile ends -->
-                    <!-- nav-timeline -->
-                    <div
-                      class="tab-pane fade"
-                      id="nav-timeline"
-                      role="tabpanel"
-                      aria-labelledby="nav-timeline-tab"
-                      tabindex="0"
-                    >
-                      <div class="px-4 py-4">Timeline content goes here.</div>
-                    </div>
-                    <!-- nav-timeline ends -->
-                  </div>
-                  <!-- tabs ends -->
-                </div>
-              </div>
-            </div>
-            <!-- profile tabs ends -->
-
-            <!-- settings tabs -->
-            <div class="offset-lg-3 col-lg-9 mt-4 sm-my-3">
-              <div class="card">
-                <div class="card-header">
-                  <h6 class="my-2">Settings</h6>
-                </div>
-                <div class="card-body">
-                  <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="inputLanguage" class="form-label">
-                        Preferred spoken language
-                      </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputLanguage"
-                        value="EN"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputSettingA" class="form-label"
-                        >Setting A</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingA"
-                        value="Setting A"
-                      />
-                    </div>
-
-                    <div class="col-md-4">
-                      <label for="inputSettingB" class="form-label"
-                        >Setting B</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingB"
-                        value="Setting B"
-                      />
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputSettingC" class="form-label"
-                        >Setting C</label
-                      >
-                      <select id="inputSettingC" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputSettingD" class="form-label"
-                        >Setting D</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingD"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="gridCheck"
-                        />
-                        <label class="form-check-label" for="gridCheck">
-                          Some other settings
-                        </label>
+                            <tr>
+                              <td>Training</td>
+                              <td>60K</td>
+                              <td>58K</td>
+                              <td>3.33%</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-warning">
-                        Update Settings
-                      </button>
-                    </div>
-                  </form>
+                  </div>
+                </div>
+              </div>
+              <!-- Jan expenses ends -->
+            </div>
+
+            <!-- bar chart -->
+            <div class="col-lg-7 sm-mt-3">
+              <div class="card">
+                <div class="card-header">
+                  <h6 class="my-2">Expenses by Sub-categories</h6>
+                </div>
+                <div class="card-body">
+                  <canvas
+                    id="subCategoryChart"
+                    style="height: 420px; width: 100%"
+                  ></canvas>
                 </div>
               </div>
             </div>
-            <!-- settings tabs ends -->
+            <!-- bar chart ends -->
           </div>
+          <!-- 1st row ends -->
+
+          <!-- 2nd row -->
+          <div class="row mt-4 sm-mt-3">
+            <!-- expenseQuartlyReport -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <div id="expenseQuartlyReport"></div>
+                </div>
+              </div>
+            </div>
+            <!-- expenseQuartlyReport ends -->
+
+            <!-- table -->
+            <div class="col-lg-8 sm-mt-3">
+              <div class="card">
+                <div class="card-header">
+                  <h6 class="my-2">Detailed expense report</h6>
+                </div>
+                <div class="card-body table-responsive">
+                  <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                      <thead>
+                        <tr>
+                          <th>Title</th>
+                          <th>Expense</th>
+                          <th>Category</th>
+                          <th>Created by</th>
+                          <th>Approved by</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Business Dinner</td>
+                          <td>$2.0K</td>
+                          <td>Meals &amp; Entertainment</td>
+                          <td>John Doe</td>
+                          <td>Manager A</td>
+                        </tr>
+
+                        <tr>
+                          <td>Office Supplies</td>
+                          <td>$3.5K</td>
+                          <td>Office Expenses</td>
+                          <td>Jane Smith</td>
+                          <td>Manager B</td>
+                        </tr>
+
+                        <tr>
+                          <td>Marketing Campaign</td>
+                          <td>$5.5K</td>
+                          <td>Marketing</td>
+                          <td>Bob Johnson</td>
+                          <td>Manager C</td>
+                        </tr>
+
+                        <tr>
+                          <td>Travel Expenses</td>
+                          <td>$2.75K</td>
+                          <td>Travel</td>
+                          <td>Alice Brown</td>
+                          <td>Manager D</td>
+                        </tr>
+
+                        <tr>
+                          <td>Training Workshop</td>
+                          <td>$1.5K</td>
+                          <td>Training</td>
+                          <td>Eva Green</td>
+                          <td>Manager E</td>
+                        </tr>
+
+                        <tr>
+                          <td>Misc</td>
+                          <td>$1.5K</td>
+                          <td>Training</td>
+                          <td>Green Eva</td>
+                          <td>Manager E</td>
+                        </tr>
+
+                        <tr>
+                          <td>Misc</td>
+                          <td>$1.5K</td>
+                          <td>Training</td>
+                          <td>Green Eva</td>
+                          <td>Manager E</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- table ends-->
+          </div>
+          <!-- 2nd row ends -->
 
           <!-- main_content ends -->
         </div>
@@ -1145,5 +981,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- script.js -->
     <script src="../static/js/script.js"></script>
+
+    <script src="../static/js/expenses.js"></script>
   </body>
 </html>

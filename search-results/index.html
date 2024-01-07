@@ -51,6 +51,8 @@
           </a>
           <hr />
           <ul class="nav nav-pills flex-column mb-auto">
+            <!-- accounts -->
+            <p class="mt-2 mb-1 text-secondary text-small">DASHBOARD</p>
             <li class="nav-item">
               <a
                 href="../index.html"
@@ -68,6 +70,15 @@
                 Widgets
               </a>
             </li>
+            <!-- todo -->
+            <li class="d-none">
+              <a href="index.html#" class="nav-link">
+                <i class="bi bi-ui-checks-grid me-2"></i>
+                Forms
+              </a>
+            </li>
+            <!-- products -->
+            <p class="mt-2 mb-1 text-secondary text-small">PRODUCTS</p>
             <li>
               <a href="../products/index.html" class="nav-link">
                 <i class="bi bi-table me-2"></i>
@@ -75,26 +86,20 @@
               </a>
             </li>
             <li>
-              <a href="index.html#" class="nav-link">
-                <i class="bi bi-ui-checks-grid me-2"></i>
-                Forms
+              <a href="../sales/index.html" class="nav-link">
+                <i class="bi bi-bank me-2"></i>
+                Sales
               </a>
             </li>
             <li>
-              <a href="../products/charts/index.html" class="nav-link">
-                <i class="bi bi-graph-up me-2"></i>
-                ChatJS
-              </a>
-            </li>
-            <li>
-              <a href="../blank-page/index.html" class="nav-link">
-                <i class="bi bi-file-earmark-fill me-2"></i>
-                Blank Page
+              <a href="../expenses/index.html" class="nav-link">
+                <i class="bi bi-receipt me-2"></i>
+                Expense
               </a>
             </li>
 
             <!-- accounts -->
-            <p class="my-2 text-secondary text-small">ACCOUNTS</p>
+            <p class="mt-2 mb-1 text-secondary text-small">ACCOUNTS</p>
             <li>
               <a href="../accounts/login/index.html" class="nav-link">
                 <i class="bi bi-box-arrow-right me-2"></i>
@@ -115,11 +120,17 @@
             </li>
 
             <!-- others -->
-            <p class="my-2 text-secondary text-small">OTHERS</p>
+            <p class="mt-2 mb-1 text-secondary text-small">OTHERS</p>
             <li>
               <a href="../404/index.html" class="nav-link">
                 <i class="bi bi-4-circle-fill me-2"></i>
                 404
+              </a>
+            </li>
+            <li>
+              <a href="../blank-page/index.html" class="nav-link">
+                <i class="bi bi-file-earmark-fill me-2"></i>
+                Blank Page
               </a>
             </li>
             <li>
@@ -139,12 +150,6 @@
               <a href="../documentation/index.html" class="nav-link">
                 <i class="bi bi-file-earmark-text me-2"></i>
                 Documentation
-              </a>
-            </li>
-            <li>
-              <a href="../profile/settings/index.html" class="nav-link">
-                <i class="bi bi-gear me-2"></i>
-                Settings
               </a>
             </li>
           </ul>
@@ -226,10 +231,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="../single-page/index.html"
-                        >
+                        <a class="dropdown-item" href="../mail/index.html">
                           <small
                             ><i class="bi bi-envelope me-2"></i>10 new
                             messages</small
@@ -278,10 +280,7 @@
                         </a>
                       </li>
                       <li>
-                        <a
-                          class="dropdown-item"
-                          href="../profile/settings/index.html"
-                        >
+                        <a class="dropdown-item" href="../profile/index.html">
                           <small>
                             <i class="bi bi-gear-fill me-2"></i>Settings
                           </small>
@@ -713,7 +712,6 @@
     </div>
 
     <!-- modal for application -->
-    <!-- The Modal -->
     <div class="modal" id="modalApplication" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
@@ -1084,6 +1082,8 @@
     <!-- jvectormap -->
     <script src="../static/js/jquery-jvectormap-2.0.5.min.js"></script>
     <script src="../static/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- ploty -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- script.js -->
     <script src="../static/js/script.js"></script>
   </body>

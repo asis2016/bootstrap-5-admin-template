@@ -6,7 +6,7 @@
     <meta name="keywords" content="Bootstrap v5.3.2, HTML, CSS, JavaScript" />
     <meta name="author" content="Ashish S. Maharjan" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>adminAM - Bootstrap 5 admin template | My Profile</title>
+    <title>adminAM - Bootstrap 5 admin template | Sales Report</title>
 
     <!-- <meta http-equiv="refresh" content="5"/> -->
 
@@ -86,7 +86,7 @@
               </a>
             </li>
             <li>
-              <a href="../sales/index.html" class="nav-link">
+              <a href="index.html" class="nav-link">
                 <i class="bi bi-bank me-2"></i>
                 Sales
               </a>
@@ -107,7 +107,7 @@
               </a>
             </li>
             <li>
-              <a href="index.html" class="nav-link">
+              <a href="../profile/index.html" class="nav-link">
                 <i class="bi bi-person-circle me-2"></i>
                 My Profile
               </a>
@@ -263,7 +263,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="index.html">
+                        <a class="dropdown-item" href="../profile/index.html">
                           <small>
                             <i class="bi bi-person-fill me-2"></i>My Profile
                           </small>
@@ -280,7 +280,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="index.html">
+                        <a class="dropdown-item" href="../profile/index.html">
                           <small>
                             <i class="bi bi-gear-fill me-2"></i>Settings
                           </small>
@@ -342,7 +342,7 @@
 
           <!-- page title -->
           <div class="pageTitle pt-4 sm-pt-0">
-            <h3>My Profile</h3>
+            <h3>Sales Report</h3>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -363,380 +363,305 @@
           </div>
           <!-- page title ends -->
 
-          <div class="row mt-4 sm-mt-3" id="profilePage">
-            <!-- profile quick info -->
-            <div class="col-lg-3">
-              <div class="card">
-                <div class="card-body">
-                  <div
-                    class="profileNameInitials d-flex justify-content-center align-item-center"
-                  >
-                    <h6 class="fs-2">JD</h6>
+          <!-- 1st row -->
+          <div class="row mt-4 sm-mt-0">
+            <div class="col-lg-5">
+              <!-- boxes -->
+              <div class="row">
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Total Revenue</h6>
+                      <h2>$10.3M</h2>
+                    </div>
                   </div>
-                  <ul class="list-group list-group-flush rounded">
-                    <li class="list-group-item" id="user">John Doe</li>
-                    <li class="list-group-item" id="home">
-                      <i class="bi bi-folder me-2"></i>
-                      <span>Senior Software Engineer</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-terminal me-2"></i>
-                      <span>Technology</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-currency-euro me-2"></i> Base salary:
-                      <span>90000.0</span>
-                    </li>
-                    <li class="list-group-item" id="shell">
-                      <i class="bi bi-calendar-check me-2"></i> Joined:
-                      <span>2023-03-15</span>
-                    </li>
-                  </ul>
+                </div>
+
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Total Profit</h6>
+                      <h2>$5.15M</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 sm-mb-3">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h6>Total Margin %</h6>
+                      <h2>50%</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- boxes ends -->
+
+              <!-- bar chart -->
+              <div class="row mt-4 sm-mt-0">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h6 class="my-2">Top 10 products by revenue</h6>
+                    </div>
+                    <div class="card-body">
+                      <canvas
+                        id="salesBarChart"
+                        style="height: 350px; width: 100%"
+                      ></canvas>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- profile quick info ends -->
+            <!-- boxes ends -->
 
-            <!-- profile tabs -->
-            <div class="col-lg-9 sm-my-3">
+            <!-- map -->
+            <div class="col-lg-7 sm-mt-3">
               <div class="card">
                 <div class="card-body">
-                  <!-- tabs -->
-                  <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button
-                        class="nav-link active"
-                        id="nav-details-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-details"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-details"
-                        aria-selected="true"
-                      >
-                        Details
-                      </button>
-                      <button
-                        class="nav-link"
-                        id="nav-timeline-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-timeline"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-timeline"
-                        aria-selected="false"
-                      >
-                        Timeline
-                      </button>
-                    </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-                    <!-- nav-profile -->
-                    <div
-                      class="tab-pane fade show active"
-                      id="nav-details"
-                      role="tabpanel"
-                      aria-labelledby="nav-profile-tab"
-                      tabindex="0"
-                    >
-                      <!-- form -->
-                      <form class="py-4 px-4">
-                        <!-- id -->
-                        <div class="row mb-3">
-                          <label for="inputId" class="col-sm-2 col-form-label">
-                            Id
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputId"
-                              value="1234"
-                            />
-                          </div>
-                        </div>
-                        <!-- firstName -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputUname"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Firstname
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputUname"
-                              value="John"
-                            />
-                          </div>
-                        </div>
-                        <!-- lastName -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputlastName"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Lastname
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputlastName"
-                              value="Doe"
-                            />
-                          </div>
-                        </div>
-                        <!-- email -->
-                        <div class="row mb-3">
-                          <label
-                            for="inputEmail"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Email address
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputEmail"
-                              value="john.doe@example.com"
-                              aria-describedby="inputEtcPasswdHelp"
-                            />
-                            <div id="inputEtcPasswdHelp" class="form-text">
-                              Your email is organized by YourCompany Ltd.
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Phone number -->
-                        <div class="row mb-3">
-                          <label
-                            for="phoneNumber"
-                            class="col-sm-2 col-form-label"
-                          >
-                            Phone number
-                          </label>
-                          <div class="col-sm-10">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="phoneNumber"
-                              value="+1 (555) 123-4567"
-                            />
-                          </div>
-                        </div>
-                        <!-- address -->
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label">
-                            Address
-                          </label>
-                          <div class="col-md-4">
-                            <label for="inputSettingB" class="form-label"
-                              >City</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputSettingB"
-                              value="123 Main St, Kathmandu"
-                            />
-                          </div>
-                          <div class="col-md-4">
-                            <label for="inputSettingC" class="form-label"
-                              >State</label
-                            >
-                            <select id="inputSettingC" class="form-select">
-                              <option selected>Bagmati</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-                          <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputZip"
-                              value="00977"
-                            />
-                          </div>
-                        </div>
-                        <!-- address ends -->
-
-                        <!-- Benefits -->
-                        <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label">
-                            Benefits
-                          </label>
-
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Premium
-                              </label>
-                            </div>
-                          </div>
-
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Dentals
-                              </label>
-                            </div>
-                          </div>
-
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                401K
-                              </label>
-                            </div>
-                          </div>
-
-                          <div class="col-sm-2">
-                            <div class="form-check mt-2">
-                              <input
-                                class="form-check-input"
-                                type="checkbox"
-                                id="gridCheck1"
-                                checked
-                                disabled
-                              />
-                              <label class="form-check-label" for="gridCheck1">
-                                Himal bonus
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Benefits ends -->
-                      </form>
-                      <!-- form ends -->
-                    </div>
-                    <!-- nav-profile ends -->
-                    <!-- nav-timeline -->
-                    <div
-                      class="tab-pane fade"
-                      id="nav-timeline"
-                      role="tabpanel"
-                      aria-labelledby="nav-timeline-tab"
-                      tabindex="0"
-                    >
-                      <div class="px-4 py-4">Timeline content goes here.</div>
-                    </div>
-                    <!-- nav-timeline ends -->
-                  </div>
-                  <!-- tabs ends -->
+                  <div id="world-map" style="width: 100%; height: 535px"></div>
                 </div>
               </div>
             </div>
-            <!-- profile tabs ends -->
+            <!-- map ends -->
+          </div>
+          <!-- 1st row ends -->
 
-            <!-- settings tabs -->
-            <div class="offset-lg-3 col-lg-9 mt-4 sm-my-3">
+          <!-- canvasQChart -->
+          <!-- todo -->
+          <div class="row mt-4 sm-mt-3 d-none">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <canvas
+                    id="canvasQChart"
+                    style="height: 350px; width: 100%"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- canvasQChart ends -->
+
+          <!-- table -->
+          <div class="row mt-4 sm-pt-4">
+            <div class="col">
               <div class="card">
                 <div class="card-header">
-                  <h6 class="my-2">Settings</h6>
+                  <h6 class="my-2">Top 10 countries</h6>
                 </div>
-                <div class="card-body">
-                  <form class="row g-3">
-                    <div class="col-md-6">
-                      <label for="inputLanguage" class="form-label">
-                        Preferred spoken language
-                      </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputLanguage"
-                        value="EN"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label for="inputSettingA" class="form-label"
-                        >Setting A</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingA"
-                        value="Setting A"
-                      />
-                    </div>
+                <div class="card-body table-responsive">
+                  <div class="table-responsive">
+                    <table class="table overflow-scroll table-hover">
+                      <thead>
+                        <tr>
+                          <th>Country</th>
+                          <th>Sales Vol</th>
+                          <th>Revenue</th>
+                          <th>Profit</th>
+                          <th>Profit margin</th>
+                          <th>Top product</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Nepal
+                            </a>
+                          </td>
+                          <td>$1200M</td>
+                          <td>$50M</td>
+                          <td>$25M</td>
+                          <td>50%</td>
+                          <td>Mobile App Development Tools ($0.8M)</td>
+                        </tr>
 
-                    <div class="col-md-4">
-                      <label for="inputSettingB" class="form-label"
-                        >Setting B</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingB"
-                        value="Setting B"
-                      />
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputSettingC" class="form-label"
-                        >Setting C</label
-                      >
-                      <select id="inputSettingC" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <label for="inputSettingD" class="form-label"
-                        >Setting D</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputSettingD"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="gridCheck"
-                        />
-                        <label class="form-check-label" for="gridCheck">
-                          Some other settings
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-warning">
-                        Update Settings
-                      </button>
-                    </div>
-                  </form>
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              China
+                            </a>
+                          </td>
+                          <td>$1000M</td>
+                          <td>$48M</td>
+                          <td>$22M</td>
+                          <td>45.83%</td>
+                          <td>Enterprise CRM Suite ($1.5M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Germany
+                            </a>
+                          </td>
+                          <td>$800M</td>
+                          <td>$35M</td>
+                          <td>$18M</td>
+                          <td>51.43%</td>
+                          <td>Blockchain Development Toolkit ($0.55M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              United States
+                            </a>
+                          </td>
+                          <td>$750M</td>
+                          <td>$32M</td>
+                          <td>$15M</td>
+                          <td>46.88%</td>
+                          <td>Cybersecurity Suite ($0.9M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Brazil
+                            </a>
+                          </td>
+                          <td>$700M</td>
+                          <td>$30M</td>
+                          <td>$14M</td>
+                          <td>46.67%</td>
+                          <td>AI-powered Customer Support System ($0.75M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Japan
+                            </a>
+                          </td>
+                          <td>$650M</td>
+                          <td>$28M</td>
+                          <td>$13M</td>
+                          <td>46.43%</td>
+                          <td>Enterprise CRM Suite ($1.5M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              United Kingdom
+                            </a>
+                          </td>
+                          <td>$600M</td>
+                          <td>$26M</td>
+                          <td>$12M</td>
+                          <td>46.15%</td>
+                          <td>Virtual Collaboration Platform ($0.6M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              France
+                            </a>
+                          </td>
+                          <td>$550M</td>
+                          <td>$24M</td>
+                          <td>$11M</td>
+                          <td>45.83%</td>
+                          <td>Data Analytics Platform ($1M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Canada
+                            </a>
+                          </td>
+                          <td>$500M</td>
+                          <td>$22M</td>
+                          <td>$10M</td>
+                          <td>45.45%</td>
+                          <td>AI-powered Customer Support System ($0.75M)</td>
+                        </tr>
+
+                        <tr>
+                          <!-- todo: country flag icons -->
+                          <td class="d-flex align-items-center">
+                            <img
+                              src="https://placehold.co/50x50.png"
+                              class="productImg me-2"
+                              alt=""
+                            />
+                            <a href="index.html#" class="text-white amj-a">
+                              Australia
+                            </a>
+                          </td>
+                          <td>$450M</td>
+                          <td>$20M</td>
+                          <td>$9M</td>
+                          <td>45%</td>
+                          <td>ERP Solution for Small Businesses ($0.65M)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- settings tabs ends -->
           </div>
+          <!-- table ends-->
 
           <!-- main_content ends -->
         </div>
@@ -1145,5 +1070,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- script.js -->
     <script src="../static/js/script.js"></script>
+
+    <script src="../static/js/sales.js"></script>
   </body>
 </html>
