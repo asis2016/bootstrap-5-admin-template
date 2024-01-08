@@ -346,13 +346,14 @@ ul.timeline > li {
   overflow-y: scroll; }
   .wrapper #pageContent #topNavigation {
     background-color: var(--amj-bg-primary-color); }
+    .wrapper #pageContent #topNavigation .nav-link i {
+      position: relative; }
     .wrapper #pageContent #topNavigation form .btn {
       border: var(--bs-border-width) solid var(--bs-border-color); }
   .wrapper #pageContent .container-fluid #searchForMobile {
     display: none; }
     .wrapper #pageContent .container-fluid #searchForMobile form .btn {
-      border: 1px solid #fff;
-      color: #fff; }
+      border: var(--bs-border-width) solid var(--bs-border-color); }
   .wrapper #pageContent .container-fluid .pageTitle {
     border-bottom: 1px solid var(--amj-border-primary-color);
     display: flex;
