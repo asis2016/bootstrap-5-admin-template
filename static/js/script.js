@@ -36,6 +36,11 @@ $(document).ready(function () {
         });
     };
 
+    /**
+     * modal > #generateReport
+     */
+    // modal > generateReport ends
+
     //gdp data
     const gdpData = {
         "AF": 16.63,

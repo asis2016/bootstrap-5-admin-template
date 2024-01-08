@@ -228,7 +228,7 @@ hr {
 
 .modal-backdrop {
   background-color: #000;
-  opacity: 0.6 !important; }
+  opacity: 0.5 !important; }
 
 /**
  *  ----- ----- ----- .border ----- ----- -----
@@ -346,13 +346,8 @@ ul.timeline > li {
   overflow-y: scroll; }
   .wrapper #pageContent #topNavigation {
     background-color: var(--amj-bg-primary-color); }
-    .wrapper #pageContent #topNavigation .nav-link i {
-      position: relative; }
-    .wrapper #pageContent #topNavigation .container-fluid div:first-child {
-      justify-content: center; }
-    .wrapper #pageContent #topNavigation .container-fluid form .btn {
-      border: 1px solid #fff;
-      color: #fff; }
+    .wrapper #pageContent #topNavigation form .btn {
+      border: var(--bs-border-width) solid var(--bs-border-color); }
   .wrapper #pageContent .container-fluid #searchForMobile {
     display: none; }
     .wrapper #pageContent .container-fluid #searchForMobile form .btn {
@@ -412,26 +407,9 @@ footer {
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
  */
 @media screen and (max-width: 767px) {
-  .sidebarToggled #mainSidebar {
-    margin-left: 0 !important; }
-
   /**
    *  ----- ----- ----- .wrapper ----- ----- -----
    */
-  .wrapper #mainSidebar {
-    bottom: 0;
-    float: none;
-    left: 0;
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    border-right: 1px solid var(--amj-border-primary-color);
-    overflow-y: scroll;
-    min-width: 250px;
-    margin-left: -20rem; }
-    .wrapper #mainSidebar div:first-child a {
-      justify-content: space-between;
-      margin-bottom: 0 !important; }
   .wrapper #pageContent #topNavigation .container-fluid div:first-child {
     justify-content: space-between; }
   .wrapper #pageContent #topNavigation .container-fluid form {
@@ -450,7 +428,7 @@ footer {
   #sectionDashboardQuickInfo .col-xs-12:last-child {
     margin-bottom: 0; } }
 /**
- * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ * max width ---- ----
  */
 @media screen and (max-width: 991px) {
   .only-d-lg {
@@ -501,6 +479,27 @@ footer {
     display: none; }
   #modalApplication .modal-body-sm i {
     margin-right: 5px; } }
+@media screen and (max-width: 1199px) {
+  .sidebarToggled #mainSidebar {
+    margin-left: 0 !important; }
+
+  .wrapper #mainSidebar {
+    bottom: 0;
+    float: none;
+    left: 0;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    border-right: 1px solid var(--amj-border-primary-color);
+    overflow-y: scroll;
+    min-width: 250px;
+    margin-left: -20rem; }
+    .wrapper #mainSidebar div:first-child a {
+      justify-content: space-between;
+      margin-bottom: 0 !important; } }
+/**
+ * min width ---- ----
+ */
 @media screen and (min-width: 992px) {
   .only-d-sm {
     display: none; }
