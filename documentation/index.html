@@ -40,24 +40,27 @@
 
       <nav id="mainSidebar" class="h-100">
         <div class="d-flex flex-column flex-shrink-0 p-3">
-          <a
-            href="../index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          <!-- first a -->
+          <div
+            class="d-flex align-items-center justify-content-between mb-3 mb-md-0 me-md-auto w-100"
           >
             <!-- logo for LG screen -->
             <span class="fs-4 logo-lg only-d-lg">
-              <img src="../static/img/logo-100x25.png" alt="" />
+              <a href="../index.html">
+                <img src="../static/img/logo-100x25.png" alt="" />
+              </a>
             </span>
-
             <!-- logo for SM screen -->
             <span class="fs-4 logo-sm only-d-sm">
               <img src="../static/img/logo-40x25.png" alt="" />
             </span>
+
             <!-- for SM screen - close -->
-            <span class="d-sm-none" id="sidebarUntoggleBtn">
+            <span class="d-none" id="sidebarUntoggleBtn">
               <i class="bi bi-x-circle-fill"></i>
             </span>
-          </a>
+          </div>
+          <!-- first a ends -->
           <hr />
           <ul class="nav nav-pills flex-column mb-auto">
             <!-- accounts -->
@@ -351,8 +354,8 @@
           <!-- main_content -->
 
           <!-- page title -->
-          <div class="pageTitle pt-4 sm-pt-0">
-            <h3>Documentation</h3>
+          <div class="pageTitle pt-3 pb-3 md-pt-0">
+            <h3 class="md-mb-0">Documentation</h3>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group me-2">
                 <button
@@ -362,7 +365,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#modalGenerateReport"
                 >
-                  Generate report
+                  Report
                 </button>
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   Export
@@ -371,10 +374,30 @@
               <button
                 type="button"
                 class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 <span data-feather="calendar"></span>
                 More options
               </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="index.html#">
+                    <small>
+                      <i class="bi bi-1-square me-2"></i>
+                      Option one
+                    </small>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#">
+                    <small>
+                      <i class="bi bi-2-square me-2"></i>
+                      Option two
+                    </small>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- page title ends -->

@@ -359,8 +359,7 @@ ul.timeline > li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem !important;
-    padding-bottom: 0.5rem !important; }
+    margin-bottom: 1rem !important; }
 
 /*
  * ----- ----- ----- ----- ----- ----- Components ----- ----- ----- ----- ----- -----
@@ -431,6 +430,9 @@ footer {
 /**
  * max width ---- ----
  */
+@media screen and (max-width: 767px) {
+  .md-pt-0 {
+    padding-top: 0 !important; } }
 @media screen and (max-width: 991px) {
   .only-d-lg {
     display: none; }
@@ -473,9 +475,6 @@ footer {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important; }
 
-  .sm-pt-0 {
-    padding-top: 0 !important; }
-
   #modalApplication .modal-body-lg {
     display: none; }
   #modalApplication .modal-body-sm i {
@@ -483,6 +482,8 @@ footer {
 @media screen and (max-width: 1199px) {
   .sidebarToggled #mainSidebar {
     margin-left: 0 !important; }
+    .sidebarToggled #mainSidebar #sidebarUntoggleBtn {
+      display: block !important; }
 
   .wrapper #mainSidebar {
     bottom: 0;
@@ -501,6 +502,9 @@ footer {
 /**
  * min width ---- ----
  */
+@media screen and (min-width: 768px) {
+  .md-mb-0 {
+    margin-bottom: 0 !important; } }
 @media screen and (min-width: 992px) {
   .only-d-sm {
     display: none; }
