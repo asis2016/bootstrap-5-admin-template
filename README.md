@@ -4,8 +4,7 @@ This project titled as `adminAM` is an open source admin template created by www
 
 Initially started as a hobby project for a Django admin template. However, it has evolved to serve as an admin template for any customized web applications.
 
-## Demo
-https://asis2016.github.io/bootstrap-5-admin-template/
+[Demo](https://asis2016.github.io/bootstrap-5-admin-template/)
 
 ## Features
 
@@ -17,9 +16,16 @@ https://asis2016.github.io/bootstrap-5-admin-template/
     <li>Documentation page</li>
     <li>FAQ page</li>
     <li>Mail page</li>
-    <li>Product index page</li>
+    <li>Product</li>
+    <ol>
+        <li>Products list page</li>
+        <li>Expenses report page</li>
+        <li>Sales report page</li>
+    </ol>
     <li>Profile page</li>
-    <li>Logs page</li>
+    <li>Search result page</li>
+    <li>Single page</li>
+    <li>System logs page</li>
 </ol>
 
 ## Bugs and Issues
