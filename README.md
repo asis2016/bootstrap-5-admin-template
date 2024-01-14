@@ -1,10 +1,34 @@
-# adminAM - Bootstrap 5 admin template
+# adminAM - Bootstrap 5 Admin Template
+
+!['homepage'](static/img/homepage.png)
 
 This project titled as `adminAM` is an open source admin template created by www.amaharjan.de.
 
 Initially started as a hobby project for a Django admin template. However, it has evolved to serve as an admin template for any customized web applications.
 
 [Demo](https://asis2016.github.io/bootstrap-5-admin-template/)
+
+## Quick Start
+
+Jump-start your project with adminAM:
+
+```bash
+$ mkdir your_project_name
+$ cd your_project_name
+$ git clone https://github.com/asis2016/bootstrap-5-admin-template.git
+```
+
+## Dependencies & Plugins
+
+The `adminAM` depends on the following frameworks and plugins:
+
+- Bootstrap v5.3.2
+- jQuery v3.6.4
+- Chart.js v4.4.1
+- jVectorMap v2.0.5
+- plotly.js v1.58.5
+- Bootstrap Icons v1.11.2
+- Google Fonts
 
 ## Features
 
@@ -36,11 +60,6 @@ Contributions are always welcome! And, if you have any feedback or query, please
 
 ## Buy me a coffee
 Your gracious contribution through [PayPal](https://www.paypal.com/paypalme/asis2016) would very much support the development of this project.
-
-
-## Related
-- [Bootstrap v.5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [Django admin template (GitHub)](https://github.com/asis2016/django-admin-template)
 
 ## License
 [MIT](./LICENSE)
