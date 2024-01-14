@@ -50,6 +50,7 @@ The `adminAM` depends on the following frameworks and plugins:
     <li>Search result page</li>
     <li>Single page</li>
     <li>System logs page</li>
+    <li>Progressive Web App (PWA)</li>
 </ol>
 
 ## Bugs and Issues
