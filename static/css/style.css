@@ -4,7 +4,9 @@
  * Website: www.amaharjan.de
  * License: The MIT License (https://opensource.org/license/mit/)
  *
- * Based on Bootstrap v5.2.3 (https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/)
+ * Based on Bootstrap  v5.3.2 (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
@@ -37,6 +39,21 @@ h6 {
 
 h4 {
   font-size: 1.125rem; }
+
+/*
+ * ----- ----- ----- font-family ----- ----- -----
+ */
+.font-heading-primary {
+  font-family: 'Ubuntu', sans-serif !important; }
+
+.font-text-primary {
+  font-family: 'Poppins', sans-serif !important; }
+
+/**
+ * ----- ----- ----- code ----- ----- -----
+ */
+code {
+  color: var(--amj-teal-primary) !important; }
 
 /**
  * ----- ----- ----- .table ----- ----- -----
@@ -402,6 +419,23 @@ footer {
  */
 .text-small {
   font-size: 80%; }
+
+/**
+ * ----- ----- ----- login.html ----- ----- -----
+ */
+.form-signin {
+  max-width: 330px;
+  padding: 1rem; }
+  .form-signin .form-floating:focus-within {
+    z-index: 2; }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
 
 /**
  * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
