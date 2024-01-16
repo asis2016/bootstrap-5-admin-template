@@ -1189,6 +1189,8 @@
 
     <script>
       $(document).ready(function () {
+        const BASEURL = getBaseUrl();
+
         // Check screen size on page load
         updateLink();
 
@@ -1203,7 +1205,7 @@
           // Check if screen size is smaller than 768px
           if (screenSize < 768) {
             // Replace href with http://google.com
-            $(".messengerList a").attr("href", "/messenger/detail/");
+            $(".messengerList a").attr("href", BASEURL + "/messenger/detail/");
           } else {
             // Reset href to #
             $(".messengerList a").attr("href", "#");

@@ -1,3 +1,13 @@
+/**
+     * BASEURL
+     */
+function getBaseUrl() {
+    var url = window.location.href;
+    var baseUrl = url.split("/")[0] + "//" + url.split("/")[2];
+    return baseUrl;
+}
+
+
 $(document).ready(function () {
     /**
      * For sidebarToggled
