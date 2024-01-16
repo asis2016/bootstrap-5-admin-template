@@ -50,6 +50,12 @@ h4 {
   font-family: 'Poppins', sans-serif !important; }
 
 /**
+ * ----- ----- ----- bg ----- ----- -----
+ */
+.bg-amj-teal {
+  background-color: var(--amj-teal-secondary) !important; }
+
+/**
  * ----- ----- ----- code ----- ----- -----
  */
 code {
@@ -59,7 +65,7 @@ code {
  * ----- ----- ----- .table ----- ----- -----
  */
 .table {
-  color: #fff;
+  color: var(--amj-text-primary);
   background-color: var(--amj-bg-primary-color); }
   .table thead tr {
     border-style: solid;
@@ -78,13 +84,13 @@ code {
     line-height: 1;
     white-space: nowrap;
     background-color: var(--amj-bg-primary-color);
-    color: #fff; }
+    color: var(--amj-text-primary-color); }
 
 /**
  * ----- ----- ----- .btn ----- ----- -----
  */
 .btn-outline-secondary {
-  color: #fff;
+  color: var(--amj-text-primary);
   border-color: var(--amj-border-primary-color); }
 
 .btn-primary-amj {
@@ -399,16 +405,16 @@ ul.timeline > li {
     font-size: 2rem;
     color: var(--bs-teal) !important; }
 .cardQuickInfo .card-footer a {
-  color: #a4a6ae;
+  color: var(--amj-text-primary-color);
   text-decoration: none; }
   .cardQuickInfo .card-footer a:hover {
-    color: #fff; }
+    color: var(--amj-text-primary-color); }
 
 /**
  * ----- ----- ----- footer ----- ----- -----
  */
 footer {
-  color: #fff;
+  color: var(--amj-text-primary-color);
   border-top: 1px solid var(--amj-border-primary-color); }
 
 .list-group {
@@ -438,9 +444,25 @@ footer {
     border-top-right-radius: 0; }
 
 /**
- * ----- ----- ----- ----- ----- ----- media screen ----- ----- ----- ----- ----- -----
+ * ----- ----- ----- #messenger ----- ----- -----
+ */
+#messenger .messengerList {
+  color: #fff !important; }
+  #messenger .messengerList .media .media-body h6 span {
+    color: #fff !important; }
+  #messenger .messengerList a:hover {
+    color: var(--amj-teal-primary) !important; }
+
+/**
+ * ----- ----- ----- ----- ----- ----- media screen > max-width ----- ----- ----- ----- ----- -----
  */
 @media screen and (max-width: 767px) {
+  .md-pt-0 {
+    padding-top: 0 !important; }
+
+  .pageTitle .btn-toolbar {
+    margin-bottom: 0 !important; }
+
   /**
    *  ----- ----- ----- .wrapper ----- ----- -----
    */
@@ -460,13 +482,12 @@ footer {
       justify-content: space-between; }
 
   #sectionDashboardQuickInfo .col-xs-12:last-child {
-    margin-bottom: 0; } }
-/**
- * max width ---- ----
- */
-@media screen and (max-width: 767px) {
-  .md-pt-0 {
-    padding-top: 0 !important; } }
+    margin-bottom: 0; }
+
+  #messenger .messengerList a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
 @media screen and (max-width: 991px) {
   .only-d-lg {
     display: none; }
@@ -534,7 +555,7 @@ footer {
       justify-content: space-between;
       margin-bottom: 0 !important; } }
 /**
- * min width ---- ----
+ * ----- ----- ----- ----- ----- ----- media screen > min-width ----- ----- ----- ----- ----- -----
  */
 @media screen and (min-width: 768px) {
   .md-mb-0 {
@@ -548,6 +569,25 @@ footer {
   #modalApplication .modal-body-lg i {
     font-size: 2.5rem; }
   #modalApplication .col-lg-2 {
-    padding: 2rem; } }
+    padding: 2rem; }
+
+  #messenger .messengerList a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
+/**
+ * ----- ----- ----- ----- ----- ----- media screen > min-width and max-width ----- ----- ----- ----- ----- -----
+ */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #messenger .messengerList a {
+    text-align: center !important; }
+  #messenger .messengerList .media {
+    text-align: center;
+    display: block !important; }
+  #messenger .messengerList img {
+    margin-right: 0 !important; }
+  #messenger .messengerList h6,
+  #messenger .messengerList .name {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

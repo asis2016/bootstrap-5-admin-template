@@ -8,14 +8,14 @@
 
     <meta
       name="description"
-      content="adminAM - Bootstrap 5 Admin Template with Search Page Demo"
+      content="adminAM - Bootstrap 5 Admin Template with Messenger Demo"
     />
     <meta
       name="keywords"
       content="adminAM, Bootstrap 5.3.2, HTML, CSS, SASS, JavaScript, Admin template, Dashboard template"
     />
 
-    <title>Admin Template | Search results</title>
+    <title>Admin Template | Messenger</title>
     <!-- <meta http-equiv="refresh" content="5"/> -->
 
     <!-- CSS -->
@@ -220,7 +220,7 @@
                       class="form-control"
                       placeholder="search here"
                     />
-                    <a class="btn" href="index.html">
+                    <a class="btn" href="../search-results/index.html">
                       <i class="bi bi-search"></i>
                     </a>
                   </div>
@@ -267,10 +267,7 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a
-                            class="dropdown-item"
-                            href="../messenger/index.html"
-                          >
+                          <a class="dropdown-item" href="index.html">
                             <small
                               ><i class="bi bi-envelope me-2"></i>10 new
                               messages</small
@@ -369,7 +366,7 @@
                     class="form-control form-control-dark text-bg-dark text-white"
                     value="search here"
                   />
-                  <a class="btn" href="index.html">
+                  <a class="btn" href="../search-results/index.html">
                     <i class="bi bi-search"></i>
                   </a>
                 </div>
@@ -382,8 +379,8 @@
 
           <!-- page title -->
           <div class="pageTitle pt-3 pb-3 md-pt-0">
-            <h3 class="md-mb-0">Search results</h3>
-            <div class="btn-toolbar mb-2 d-none">
+            <h3 class="md-mb-0">All messages</h3>
+            <div class="btn-toolbar mb-2">
               <div class="btn-group me-2">
                 <button
                   id="generateReport"
@@ -429,320 +426,337 @@
           </div>
           <!-- page title ends -->
 
-          <div class="row mt-4 sm-mt-0">
-            <div class="col-lg-6">
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Premium Wireless Headphones</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/headphones
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Immerse yourself in high-quality audio with our premium
-                    wireless headphones.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >audio</span
+          <div class="row mt-4" id="messenger">
+            <!-- people list -->
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 messengerList">
+              <div class="card">
+                <div class="card-body">
+                  <h6
+                    class="card-title d-flex justify-content-between align-items-center"
                   >
+                    Messages
+                  </h6>
 
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >headphones</span
+                  <a
+                    href="index.html#"
+                    class="media py-2 my-2 text-decoration-none text-white"
                   >
+                    <img
+                      src="../static/img/profile/profile-1.jpg"
+                      class="rounded-circle me-3"
+                      height="50px"
+                      width="50px"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h6 class="mt-0">
+                        John Doe
+                        <span> Jan. 1, 2024 </span>
+                      </h6>
+                      <p class="name">Hello, how are you doing today?</p>
+                    </div>
+                  </a>
+                  <div class="divider"></div>
 
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >wireless</span
+                  <a
+                    href="index.html#"
+                    class="media py-2 my-2 text-decoration-none text-white"
                   >
+                    <img
+                      src="../static/img/profile/profile-2.jpg"
+                      class="rounded-circle me-3"
+                      height="50px"
+                      width="50px"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h6 class="mt-0">
+                        Alice Smith
+                        <span> Feb. 15, 2024 </span>
+                      </h6>
+                      <p class="name">Sending a quick update on our project.</p>
+                    </div>
+                  </a>
+                  <div class="divider"></div>
 
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Smart Home Security System</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/security-system
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Protect your home with our advanced smart security system,
-                    ensuring peace of mind.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >home</span
+                  <a
+                    href="index.html#"
+                    class="media py-2 my-2 text-decoration-none text-white"
                   >
+                    <img
+                      src="../static/img/profile/profile-3.jpg"
+                      class="rounded-circle me-3"
+                      height="50px"
+                      width="50px"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h6 class="mt-0">
+                        Bob Johnson
+                        <span> Mar. 10, 2024 </span>
+                      </h6>
+                      <p class="name">
+                        Friendly reminder about our upcoming meeting.
+                      </p>
+                    </div>
+                  </a>
+                  <div class="divider"></div>
 
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >security</span
+                  <a
+                    href="index.html#"
+                    class="media py-2 my-2 text-decoration-none text-white"
                   >
+                    <img
+                      src="../static/img/profile/profile-4.jpg"
+                      class="rounded-circle me-3"
+                      height="50px"
+                      width="50px"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h6 class="mt-0">
+                        Eva Williams
+                        <span> Apr. 5, 2024 </span>
+                      </h6>
+                      <p class="name">
+                        Wishing you a fantastic and joyful birthday!
+                      </p>
+                    </div>
+                  </a>
+                  <div class="divider"></div>
 
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >smart</span
+                  <a
+                    href="index.html#"
+                    class="media py-2 my-2 text-decoration-none text-white"
                   >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Fashionable Smartwatch</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/smartwatch
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Stay connected and stylish with our fashionable smartwatch,
-                    packed with features for modern living.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >fashion</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >wearables</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >technology</span
-                  >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Compact Espresso Machine</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/espresso-machine
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Savor the rich taste of freshly brewed coffee with our
-                    compact espresso machine, designed for coffee enthusiasts.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >coffee</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >appliances</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >compact</span
-                  >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Outdoor Adventure Backpack</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/adventure-backpack
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Embark on thrilling adventures with our durable and
-                    feature-packed outdoor adventure backpack.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >outdoors</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >adventure</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >backpack</span
-                  >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Professional Camera Drone</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/camera-drone
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Capture stunning aerial shots with our professional camera
-                    drone, perfect for photography and videography enthusiasts.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >photography</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >drones</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >technology</span
-                  >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Organic Skincare Set</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/skincare-set
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Nourish your skin with our organic skincare set, crafted
-                    with natural ingredients for a radiant complexion.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >beauty</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >skincare</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >organic</span
-                  >
-
-                  <!-- tags ends -->
-                </div>
-              </div>
-
-              <div class="d-flex pt-3">
-                <img
-                  src="https://placehold.co/50x50.png"
-                  class="flex-shrink-0 me-2 rounded"
-                  width="32"
-                  height="32"
-                  alt=""
-                />
-                <div class="pb-3 mb-0 small lh-sm">
-                  <p class="mb-0">
-                    <strong class="d-block">Home Fitness Equipment</strong>
-                  </p>
-                  <p class="my-1">
-                    <a href="index.html#" class="amj-a">
-                      www.yourcompany.priv/fitness-equipment
-                    </a>
-                  </p>
-                  <p class="my-2">
-                    Achieve your fitness goals at home with our versatile and
-                    high-quality home fitness equipment.
-                  </p>
-                  <!-- tags -->
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >fitness</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >home</span
-                  >
-
-                  <span class="badge rounded-pill text-bg-info fw-medium"
-                    >exercise</span
-                  >
-
-                  <!-- tags ends -->
+                    <img
+                      src="../static/img/profile/profile-5.jpg"
+                      class="rounded-circle me-3"
+                      height="50px"
+                      width="50px"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h6 class="mt-0">
+                        Jane Doe
+                        <span> May 20, 2024 </span>
+                      </h6>
+                      <p class="name">Just wanted to say a quick hello!</p>
+                    </div>
+                  </a>
+                  <div class="divider"></div>
                 </div>
               </div>
             </div>
+            <!-- people list ends -->
+
+            <!-- people's message  -->
+            <!-- Note:  -->
+            <div class="col-md-10 col-lg-9 d-none d-md-block">
+              <div class="card">
+                <div class="card-body p-4">
+                  <div class="row my-4">
+                    <!-- incoming -->
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../static/img/profile/profile-1.jpg"
+                          class="rounded-circle me-3"
+                          height="50px"
+                          width="50px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="bg-secondary p-2 rounded mb-2">
+                            Hi, I&#x27;m interested in your products. Can you
+                            provide more information?
+                          </p>
+                          <small>2024-01-16, 12:30:00</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- incoming ends -->
+
+                    <!-- outgoing -->
+                    <div class="col-lg-12 d-flex align-items-end flex-column">
+                      <div
+                        class="bg-amj-teal p-2 rounded mb-2 text-white"
+                        style="width: 50%"
+                      >
+                        Hello! Sure, I&#x27;d be happy to help. What specific
+                        information are you looking for?
+                      </div>
+                      <small>2024-01-16, 12:32:15</small>
+                    </div>
+                    <!-- outgoing ends -->
+                  </div>
+
+                  <div class="row my-4">
+                    <!-- incoming -->
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../static/img/profile/profile-1.jpg"
+                          class="rounded-circle me-3"
+                          height="50px"
+                          width="50px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="bg-secondary p-2 rounded mb-2">
+                            I&#x27;m curious about your pricing and any ongoing
+                            promotions.
+                          </p>
+                          <small>2024-01-16, 12:35:20</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- incoming ends -->
+
+                    <!-- outgoing -->
+                    <div class="col-lg-12 d-flex align-items-end flex-column">
+                      <div
+                        class="bg-amj-teal p-2 rounded mb-2 text-white"
+                        style="width: 50%"
+                      >
+                        Great question! Our pricing varies based on the product.
+                        Let me check for ongoing promotions. Please wait a
+                        moment.
+                      </div>
+                      <small>2024-01-16, 12:37:45</small>
+                    </div>
+                    <!-- outgoing ends -->
+                  </div>
+
+                  <div class="row my-4">
+                    <!-- incoming -->
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../static/img/profile/profile-1.jpg"
+                          class="rounded-circle me-3"
+                          height="50px"
+                          width="50px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="bg-secondary p-2 rounded mb-2">
+                            That sounds fantastic! Could you provide pricing
+                            details for your best-selling products?
+                          </p>
+                          <small>2024-01-16, 12:42:30</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- incoming ends -->
+
+                    <!-- outgoing -->
+                    <div class="col-lg-12 d-flex align-items-end flex-column">
+                      <div
+                        class="bg-amj-teal p-2 rounded mb-2 text-white"
+                        style="width: 50%"
+                      >
+                        Certainly! Here is the pricing for our top three
+                        best-selling products...
+                      </div>
+                      <small>2024-01-16, 12:45:55</small>
+                    </div>
+                    <!-- outgoing ends -->
+                  </div>
+
+                  <div class="row my-4">
+                    <!-- incoming -->
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../static/img/profile/profile-1.jpg"
+                          class="rounded-circle me-3"
+                          height="50px"
+                          width="50px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="bg-secondary p-2 rounded mb-2">
+                            Thanks for the information! Do you offer any
+                            warranty or satisfaction guarantee?
+                          </p>
+                          <small>2024-01-16, 12:48:10</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- incoming ends -->
+
+                    <!-- outgoing -->
+                    <div class="col-lg-12 d-flex align-items-end flex-column">
+                      <div
+                        class="bg-amj-teal p-2 rounded mb-2 text-white"
+                        style="width: 50%"
+                      >
+                        Absolutely! We provide a 1-year warranty on all our
+                        products, and we have a 30-day satisfaction guarantee.
+                        If you&#x27;re not satisfied, we&#x27;ll refund your
+                        purchase.
+                      </div>
+                      <small>2024-01-16, 12:50:45</small>
+                    </div>
+                    <!-- outgoing ends -->
+                  </div>
+
+                  <div class="row my-4">
+                    <!-- incoming -->
+                    <div class="col-lg-12">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="../static/img/profile/profile-1.jpg"
+                          class="rounded-circle me-3"
+                          height="50px"
+                          width="50px"
+                          alt=""
+                        />
+                        <div>
+                          <p class="bg-secondary p-2 rounded mb-2">
+                            That&#x27;s reassuring. I&#x27;ll go through the
+                            details and get back to you if I have any more
+                            questions. Thanks!
+                          </p>
+                          <small>2024-01-16, 12:53:00</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- incoming ends -->
+
+                    <!-- outgoing -->
+                    <div class="col-lg-12 d-flex align-items-end flex-column">
+                      <div
+                        class="bg-amj-teal p-2 rounded mb-2 text-white"
+                        style="width: 50%"
+                      >
+                        Thank you too :)
+                      </div>
+                      <small>2024-01-16, 13:00:00</small>
+                    </div>
+                    <!-- outgoing ends -->
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="input-group my-2">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputGroup1"
+                        placeholder="Username"
+                      />
+                      <label for="floatingInputGroup1">Reply to John Doe</label>
+                    </div>
+                    <span class="input-group-text">
+                      <i class="bi bi-send-arrow-up"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- people's message ends -->
           </div>
 
           <!-- main_content ends -->
@@ -1172,5 +1186,30 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- script.js -->
     <script src="../static/js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Check screen size on page load
+        updateLink();
+
+        // Update link on window resize
+        $(window).resize(function () {
+          updateLink();
+        });
+
+        function updateLink() {
+          var screenSize = $(window).width();
+
+          // Check if screen size is smaller than 768px
+          if (screenSize < 768) {
+            // Replace href with http://google.com
+            $(".messengerList a").attr("href", "/messenger/detail/");
+          } else {
+            // Reset href to #
+            $(".messengerList a").attr("href", "#");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
