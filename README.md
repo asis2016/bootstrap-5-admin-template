@@ -30,6 +30,10 @@ The `adminAM` depends on the following frameworks and plugins:
 - Bootstrap Icons v1.11.2
 - Google Fonts
 
+## Acknowledgements
+
+- [Unsplash](https://unsplash.com/)
+
 ## Features
 
 <ol>
